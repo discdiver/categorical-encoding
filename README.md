@@ -1,3 +1,5 @@
+Jeff's fork for benchmarking and maybe documentation.
+
 Categorical Encoding Methods
 ============================
 
@@ -6,7 +8,7 @@ Categorical Encoding Methods
 [![CircleCI Status](https://circleci.com/gh/scikit-learn-contrib/categorical-encoding.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/scikit-learn-contrib/categorical-encoding/tree/master)
 [![DOI](https://zenodo.org/badge/47077067.svg)](https://zenodo.org/badge/latestdoi/47077067)
 
-A set of scikit-learn-style transformers for encoding categorical 
+A set of scikit-learn-style transformers for encoding categorical
 variables into numeric by means of different techniques.
 
 Important Links
@@ -41,7 +43,7 @@ To install the module execute:
 $ python setup.py install
 ```
 
-or 
+or
 
 ```
 pip install category_encoders
@@ -52,11 +54,11 @@ or
 ```
 conda install -c conda-forge category_encoders
 ```
-    
+
 To use:
 
     import category_encoders as ce
-    
+
     encoder = ce.BackwardDifferenceEncoder(cols=[...])
     encoder = ce.BinaryEncoder(cols=[...])
     encoder = ce.HashingEncoder(cols=[...])
@@ -69,8 +71,8 @@ To use:
     encoder = ce.TargetEncoder(cols=[...])
     encoder = ce.LeaveOneOutEncoder(cols=[...])
 
-All of these are fully compatible sklearn transformers, so they can be used in pipelines or in your existing scripts. If 
-the cols parameter isn't passed, every non-numeric column will be encoded. Please see the 
+All of these are fully compatible sklearn transformers, so they can be used in pipelines or in your existing scripts. If
+the cols parameter isn't passed, every non-numeric column will be encoded. Please see the
 docs for transformer-specific configuration options.
 
 Examples
@@ -94,7 +96,7 @@ Examples
 In the examples directory, there is an example script used to benchmark
 different encoding techniques on various datasets.
 
-The datasets used in the examples are car, mushroom, and splice datasets 
+The datasets used in the examples are car, mushroom, and splice datasets
 from the UCI dataset repository, found here:
 
 [datasets](https://archive.ics.uci.edu/ml/datasets)
